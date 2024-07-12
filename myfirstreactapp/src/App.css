@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  margin: 0px;
+  color: white;
+  font-size: x-large;
+}
+
+@keyframes Slidedown {
+  0%{
+    opacity: 0;
+    transform: translateY(-4rem) scale(.8);
+  }
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+h1{
+  animation: Slidedown .6s ease-out forwards;
+}
+
+
+

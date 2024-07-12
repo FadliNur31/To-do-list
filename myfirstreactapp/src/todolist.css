@@ -1,0 +1,83 @@
+input{
+   height: 2rem ;
+   width:20%;
+   border-radius: 5px;
+   border-color: white;
+
+}
+button{
+    height: 2.3rem;
+    width:5%;
+    background-color: green;
+    border-radius: 5px;
+    border-color: green;
+    color: white;
+}
+
+ol li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    border: 1px solid rgb(255, 254, 254);
+    justify-content: space-between;
+    max-width: 30rem;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    border-radius: 1rem;
+    background-color: white;
+    color:black;
+    animation: forLi .4s ease-out forwards;
+}
+.delete{
+    width:20%
+}
+.error{
+    color:red
+}
+.Date{
+    position: absolute;
+    right: 10rem;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 100;
+}
+form{
+    animation: Slidedown .6s ease-out backwards;
+  }
+
+.fade-out{
+  animation: DeleteItem .3s ease-out forwards;
+}
+@keyframes Slidedown {
+    0%{
+      opacity: 0;
+      transform: translateY(-4rem) scale(.8);
+    }
+    100%{
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes DeleteItem {
+    0%{
+      opacity: 1;
+      transform: scale(.8);
+    }
+    100%{
+      opacity: 0;
+      transform: scale(.1);
+    }
+  }
+@keyframes forLi {
+    0%{
+      opacity: 1;
+      transform: translateX(-2rem) scale(.6);
+    }
+    100%{
+      opacity: 1;
+      transform: none;
+    }
+  }
