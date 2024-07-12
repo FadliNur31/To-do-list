@@ -73,7 +73,7 @@ form{
   }
 @keyframes forLi {
     0%{
-      opacity: 1;
+      opacity: 0;
       transform: translateX(-2rem) scale(.6);
     }
     100%{
